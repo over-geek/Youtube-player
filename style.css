@@ -15,6 +15,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 56px;
     padding: 10px 30px;
 }
@@ -26,7 +27,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 9%;
+    width: 12%;
 }
 
 #logo{
@@ -117,4 +118,183 @@ header{
 
 .account-container > div:hover{
     background-color: rgb(230, 230, 230);
+}
+
+/*--------MAIN SECTION----------*/  
+.main-section {
+    padding: 0 30px;
+}
+
+.video-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.video-column{
+    width: 74%;
+    height: 500px;
+}
+
+.sidebar{
+    width: 26%;
+}
+
+.responsive-iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.video-description{
+    width: 100%;
+}
+.video-description #title{
+    padding: 10px 0;
+}
+.video-description #title h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+#channel-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#channel-info .upload-info #owner{
+    display: flex;
+    flex-direction: row;
+}
+.upload-info{
+    display: flex;
+    flex-direction: row;
+}
+
+#channel-info .upload-info #owner .channel-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+#channel-info .upload-info #owner #owner-info span{
+    font-size: 13px;
+}
+
+#channel-info .upload-info #owner #owner-info a{
+    text-decoration: none;
+    color: black;
+}
+
+#channel-info .upload-info #owner #owner-info{
+    margin-left: 10px;
+}
+#subscribe-button{
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#channel-info #actions{
+    min-width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#channel-info #actions .rating{
+    display: flex;
+    flex-direction: row;
+}
+
+#channel-info #actions button{
+    padding: 10px 15px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.rating #like{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.rating #dislike{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+#actions #share, #download, #save{
+    border-radius: 50px;
+}
+
+#actions #share span, #download span, #save span{
+    margin-left: 8px;
+}
+
+#actions #more{
+    border-radius: 50%;
+    font-weight: 600;
+
+}
+
+/*video description*/
+#video-info{
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#video-info h5{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#video-info p{
+    font-size: 14px;
+}
+
+#video-info p a{
+    text-decoration: none;
+}
+
+#video-info p span{
+    font-weight: 600;
+}
+
+/* Comments section */
+#comments{
+    padding-top: 20px;
+}
+
+#comments .comment-header .comment-title h4{
+    font-weight: 500;
+}
+
+#comments .comment-header .comment-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#comments #sort-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#comments #sort-menu h5{
+    font-weight: 500;
+    margin-left: 5px;
 }
